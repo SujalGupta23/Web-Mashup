@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Weather and Location Mashup</title>
+  </head>
+  <body>
+    <h1>Weather and Location Mashup</h1>
+    <div>
+      <label for="location">Location: </label>
+      <input type="text" id="location" required />
+    </div>
+    <button id="fetchData">Get Weather and Location</button>
+    <div id="result">
+      <div id="weatherInfo">
+        <h2>Weather Information</h2>
+        <p id="weatherDescription"></p>
+        <p id="temperature"></p>
+      </div>
+      <div id="locationInfo">
+        <h2>Location and Timezone</h2>
+        <p id="lat"></p>
+        <p id="long"></p>
+        <p id="timezone"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
